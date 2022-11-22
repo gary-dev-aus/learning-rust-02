@@ -23,9 +23,11 @@ pub enum Suit {
 
 pub fn display_card_vector(hand: &Vec<Card>) -> String {
     let mut string_array: Vec<String> = vec![];
+
     for card in hand {
         string_array.push(format!("{}", card));
     }
+
     let string = string_array.join(", ");
 
     string
